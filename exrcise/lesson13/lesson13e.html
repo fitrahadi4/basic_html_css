@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 13e</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+      p {
+        margin: 0;
+      }
+      .box {
+        box-shadow: 1px 1px 5px rgba(87, 87, 87, 0.5);
+        padding: 16px;
+        width: 428px;
+      }
+      .title {
+        color: gray;
+      }
+      .container {
+        display: flex;
+        margin-top: 28px;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 65px;
+      }
+      .profile .picture {
+        width: 50px;
+        border-radius: 25px;
+      }
+      .info {
+        flex: 1;
+      }
+      .details {
+        display: flex;
+        justify-content: space-between;
+      }
+      .details .name {
+        width: 230px;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+      .details .subname {
+        font-size: 17px;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      .details .time {
+        margin-right: 14px;
+        font-size: 15px;
+        color: gray;
+      }
+      .about p {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="title">ALL INBOXES</div>
+      <div class="container">
+        <div class="profile">
+          <img class="picture" src="/channel-pictures/channel-1.jpeg" alt="" />
+        </div>
+        <div class="info">
+          <div class="details">
+            <div>
+              <p class="name">Chewy Promotions</p>
+              <p class="subname">Biggest sales of the year!</p>
+            </div>
+            <p class="time">4:58 PM</p>
+          </div>
+          <div class="about">
+            <p>Hey there! We're writing to tell you about our...</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="profile">
+          <img class="picture" src="/channel-pictures/channel-2.jpeg" alt="" />
+        </div>
+        <div class="info">
+          <div class="details">
+            <div>
+              <p class="name">Best Buy</p>
+              <p class="subname">Your Best Buy eReceipt</p>
+            </div>
+            <p class="time">12:32 PM</p>
+          </div>
+          <div class="about">
+            <p>Thank you for shopping at Best Buy, here is...</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="profile">
+          <img class="picture" src="/channel-pictures/channel-3.jpeg" alt="" />
+        </div>
+        <div class="info">
+          <div class="details">
+            <div>
+              <p class="name">Netflix</p>
+              <p class="subname">Here's what's coming soon to Netflix</p>
+            </div>
+            <p class="time">9:00 AM</p>
+          </div>
+          <div class="about">
+            <p>Brand new movies and shows, old favorites...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

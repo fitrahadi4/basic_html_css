@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8e. Uber request a ride form</title>
+    <style>
+      body {
+        font-family: arial;
+      }
+      .form input {
+        padding: 15px 15px;
+        background-color: #f0f0f0;
+        border: none;
+      }
+      .form .pickuploc,
+      .form .destination {
+        display: block;
+        width: 300px;
+        margin-bottom: 10px;
+      }
+      .form button {
+        padding: 14px 19px;
+        border: none;
+        cursor: pointer;
+      }
+      .form .req,
+      .form .schedule {
+        margin-top: 18px;
+      }
+      .form .req {
+        background-color: #000;
+        color: #fff;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Request a ride now</h1>
+    <div class="form">
+      <input
+        class="pickuploc"
+        type="text"
+        placeholder="Enter pickup location"
+      />
+      <input class="destination" type="text" placeholder="Enter destination" />
+      <button class="req">Request now</button>
+      <button class="schedule">Schedule for later</button>
+    </div>
+  </body>
+</html>

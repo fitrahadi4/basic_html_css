@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 9f</title>
+    <style>
+      body {
+        font-family: arial;
+      }
+
+      .tag {
+        /* background-color: #000; */
+        box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+        width: 250px;
+        display: inline-block;
+        margin: 0 10px;
+        /* padding: 19px 17px; */
+      }
+      .tag .img {
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .tag .title,
+      .tag .desc,
+      .tag .add-btn {
+        margin-left: 10px;
+      }
+
+      .tag .title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 12px;
+        margin-bottom: 8px;
+      }
+
+      .tag .desc {
+        margin-top: 0;
+        color: #636363;
+      }
+
+      .tag .add-btn {
+        background-color: #3974e7;
+        color: #fff;
+        border: none;
+        padding: 9px 20px;
+        font-size: 15px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="group-tag">
+      <div class="tag">
+        <img class="img" src="../../thumbnail/1.jpg" alt="" />
+        <p class="title">Oliver</p>
+        <p class="desc">2 mutual friends</p>
+        <button class="add-btn">Add Friend</button>
+      </div>
+      <div class="tag">
+        <img class="img" src="../../thumbnail/2.jpg" alt="" />
+        <p class="title">Mimi</p>
+        <p class="desc">3 mutual friends</p>
+        <button class="add-btn">Add Friend</button>
+      </div>
+      <div class="tag">
+        <img class="img" src="../../thumbnail/3.jpg" alt="" />
+        <p class="title">Rex</p>
+        <p class="desc">4 mutual friends</p>
+        <button class="add-btn">Add Friend</button>
+      </div>
+    </div>
+  </body>
+</html>

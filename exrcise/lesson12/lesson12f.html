@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 12f</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: arial;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60px;
+        background-color: #7353ad;
+        align-items: center;
+      }
+      .home {
+        width: 150px;
+        color: #fff;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+      .button {
+        width: 200px;
+        text-align: right;
+        margin-right: 14px;
+      }
+      .button button {
+        cursor: pointer;
+        padding: 8px 20px;
+        background-color: #7353ad;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: bold;
+      }
+      .search {
+        flex: 1;
+        text-align: center;
+      }
+      .search input {
+        width: 400px;
+        padding: 9px 18px;
+        border-radius: 16px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="home">Home</div>
+      <div class="search"><input type="text" placeholder="Search" /></div>
+      <div class="button"><button>Download</button></div>
+    </div>
+  </body>
+</html>

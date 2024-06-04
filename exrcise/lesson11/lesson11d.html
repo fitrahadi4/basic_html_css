@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 11d</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Roboto, Arial;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .container {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        padding-bottom: 18px;
+      }
+      .container .profile-pic img {
+        width: 100%;
+      }
+      .container .profile-info {
+        padding-left: 12px;
+        padding-top: 10px;
+      }
+      .container .profile-info .name {
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      .container .profile-info .channel-pic {
+        width: 40px;
+        border-radius: 20px;
+      }
+      .container .profile-info .related-friends {
+        color: #7b7b7b;
+        margin-left: 5px;
+        font-size: 17px;
+      }
+      .container .profile-info .add-btn {
+        margin-top: 16px;
+        background-color: #3975ea;
+        color: #fff;
+        border: none;
+        padding: 12px 24px;
+        font-size: 17px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .container-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+      }
+
+      .channel-info {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-grid">
+      <div class="container">
+        <div class="profile-pic">
+          <img src="../../profile-pictures/8.jpg" alt="" />
+        </div>
+        <div class="profile-info">
+          <p class="name">Oliver</p>
+          <div class="channel-info">
+            <img
+              class="channel-pic"
+              src="../../channel-pictures/channel-1.jpeg"
+              alt=""
+            />
+            <p class="related-friends">2 mutual friends</p>
+          </div>
+          <button class="add-btn">Add Friend</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="profile-pic">
+          <img src="../../profile-pictures/7.jpg" alt="" />
+        </div>
+        <div class="profile-info">
+          <p class="name">Mimi</p>
+          <div class="channel-info">
+            <img
+              class="channel-pic"
+              src="../../channel-pictures/channel-2.jpeg"
+              alt=""
+            />
+            <p class="related-friends">3 mutual friends</p>
+          </div>
+          <button class="add-btn">Add Friend</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="profile-pic">
+          <img src="../../profile-pictures/6.jpg" alt="" />
+        </div>
+        <div class="profile-info">
+          <p class="name">Rex</p>
+          <div class="channel-info">
+            <img
+              class="channel-pic"
+              src="../../channel-pictures/channel-3.jpeg"
+              alt=""
+            />
+            <p class="related-friends">4 mutual friends</p>
+          </div>
+          <button class="add-btn">Add Friend</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

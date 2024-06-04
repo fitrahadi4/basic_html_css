@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Social Media</title>
+    <style>
+      .pagination {
+        max-width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .pagination button {
+        padding: 10px 14px;
+        background-color: #efefef;
+        border: 1px solid #949494;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      .stretch {
+        margin-top: 30px;
+      }
+      .stretch button {
+        background-color: #017502;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: padding 0.15s;
+      }
+      .stretch button:hover {
+        padding: 20px 30px;
+      }
+
+      .shadow {
+        margin-top: 30px;
+      }
+      .shadow button {
+        background-color: #017502;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.15s;
+      }
+      .shadow button:active {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      }
+
+      .margin-padding {
+        margin-top: 30px;
+      }
+
+      .margin-padding button {
+        background-color: #017502;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0 11px;
+        transition: padding 0.15s, margin 0.15s;
+      }
+
+      .margin-padding button:hover {
+        padding: 10px 25px;
+        margin: 0 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <button>Back</button>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <button>Next</button>
+    </div>
+
+    <div class="stretch">
+      <button>Stretch</button>
+    </div>
+
+    <div class="shadow">
+      <button>Shadow</button>
+    </div>
+
+    <div class="margin-padding">
+      <button>One</button>
+      <button>Two</button>
+      <button>Three</button>
+    </div>
+  </body>
+</html>

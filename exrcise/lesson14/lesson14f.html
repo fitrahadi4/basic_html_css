@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 14f</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      body {
+        font-family: arial;
+      }
+
+      .channels-container {
+        background-color: #27282e;
+        color: #fff;
+        width: 200px;
+        padding: 18px 22px;
+        position: fixed;
+        top: 0;
+        left: 80px;
+        bottom: 0;
+      }
+
+      .channels-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .channels-menu-btn {
+        color: #94949b;
+        background-color: #27282e;
+        border: none;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .channels-list {
+        color: #94949b;
+      }
+
+      .channels-list p {
+        margin-bottom: 16px;
+        cursor: pointer;
+      }
+
+      .channels-pics {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 80px;
+        background-color: #17171e;
+        text-align: center;
+        padding-top: 10px;
+      }
+      .channels-pic {
+        width: 50px;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="channels-container">
+      <div class="channels-menu">
+        <p>INFO</p>
+        <button class="channels-menu-btn">+</button>
+      </div>
+      <div class="channels-list">
+        <p># new-videos</p>
+        <p># updates</p>
+        <p># faq</p>
+      </div>
+    </div>
+
+    <div class="channels-pics">
+      <img
+        class="channels-pic"
+        src="../../channel-pictures/channel-1.jpeg"
+        alt=""
+      />
+      <img
+        class="channels-pic"
+        src="../../channel-pictures/channel-2.jpeg"
+        alt=""
+      />
+      <img
+        class="channels-pic"
+        src="../../channel-pictures/channel-3.jpeg"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 14e</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 3000px;
+      }
+      .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        /* border-bottom: 1px solid rgb(175, 175, 175); */
+      }
+      .profile {
+        width: 400px;
+        /* background-color: lightblue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .profile .pp-img {
+        border-radius: 30px;
+        width: 40px;
+        height: 40px;
+      }
+      .profile .name {
+        margin-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .option {
+        /* background-color: lightpink; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+      }
+      .option .btn-addme {
+        background-color: #2b6ee9;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 6px;
+        margin-right: 10px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .option .btn-message {
+        background-color: #e8e9ef;
+        /* color: white; */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <img
+          class="pp-img"
+          src="../../channel-pictures/channel-1.jpeg"
+          alt=""
+        />
+        <p class="name">Oliver Cat</p>
+      </div>
+      <div class="option">
+        <button class="btn-addme">Add Friend</button>
+        <button class="btn-message">Message</button>
+      </div>
+    </div>
+  </body>
+</html>

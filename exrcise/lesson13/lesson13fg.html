@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 13 f and g</title>
+    <style>
+      body {
+        font-family: arial;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        width: 480px;
+        margin-top: 20px;
+      }
+
+      .channel {
+        width: 80px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+      }
+
+      .channel .channel-picture {
+        width: 50px;
+        border-radius: 25px;
+      }
+
+      .info {
+        flex: 1;
+      }
+
+      .info .info-user {
+        display: flex;
+        margin-bottom: 9px;
+      }
+
+      .info .info-user .name {
+        font-weight: bold;
+        margin-right: 6px;
+      }
+
+      .info .info-user .email {
+        color: gray;
+      }
+
+      .info .description {
+        line-height: 1.4;
+      }
+      .info .box {
+        display: flex;
+        margin-top: 14px;
+        border: 1px solid gray;
+        border-radius: 17px;
+      }
+
+      .info .box .thumbnail {
+        width: 140px;
+        border-top-left-radius: 17px;
+        border-bottom-left-radius: 17px;
+      }
+
+      .info .box .post {
+        margin-left: 10px;
+        padding: 10px;
+        /* background-color: blue; */
+      }
+
+      .info .box .post .post-link {
+        color: gray;
+      }
+
+      .info .box .post .post-title {
+        margin-top: 6px;
+        line-height: 1.4;
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="channel">
+        <img
+          class="channel-picture"
+          src="../../channel-pictures/channel-1.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="info">
+        <div class="info-user">
+          <p class="name">supersimple.dev</p>
+          <p class="email">@SuperSimpleDev</p>
+        </div>
+        <p class="description">
+          What is backend web development? A complete overview. New video is up!
+        </p>
+        <div class="box">
+          <img
+            class="thumbnail"
+            src="../../thumbnail/thumbnail-1.webp"
+            alt=""
+          />
+          <div class="post">
+            <p class="post-link">youtube.com</p>
+            <p class="post-title">
+              Backend web development - a complete overview (2021)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

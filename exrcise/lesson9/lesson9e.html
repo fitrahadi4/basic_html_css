@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9e</title>
+    <style>
+      .twitter {
+        display: inline-block;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 4px;
+        margin-left: 10px;
+      }
+      .twitter * {
+        vertical-align: middle;
+        margin: 0 2px;
+      }
+      .twitter .img {
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        cursor: pointer;
+        /* vertical-align: middle; */
+      }
+      .twitter .status {
+        color: #818181;
+        padding: 10px 10px;
+        width: 220px;
+        border: none;
+        border-radius: 12px;
+      }
+      .twitter .post-btn {
+        background-color: #4899e9;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+        /* vertical-align: middle; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create a textbos:</h1>
+    <p>9e. Twitter text box</p>
+    <div class="twitter">
+      <img class="img" src="img.jpg" alt="cek" />
+      <input class="status" type="text" placeholder="What's happening?" />
+      <button class="post-btn">Tweet</button>
+    </div>
+  </body>
+</html>
