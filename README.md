@@ -1,4 +1,4 @@
-https://youtu.be/G3e-cpL7ofc?si=qSXTWzslzM2VRYqe&t=19131
+https://youtu.be/G3e-cpL7ofc?si=RS1oP57ZeygSCU81&t=20015
 
 https://supersimple.dev/exercises/youtube
 
@@ -8,4 +8,6 @@ propoerties
 position
 -fixed : nempel di jendela layar, kombo sama child position absolute untuk buat x button
 -relative: tidak ada perbedaan, cuman dikombo sama child position absolute untuk ikut pergerakkannya, seperti timer pada thumbnail yt
+relative membuat zindex berperan penting di header, karena yang pertama baris muncul akan ditimpa oleh baris berikutnya
 -absolute: untuk child saja
+-static: defaultnya

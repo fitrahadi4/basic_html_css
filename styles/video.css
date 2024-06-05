@@ -4,8 +4,21 @@
 
 .video-preview .thumbnail-row {
   margin-bottom: 12px;
+  position: relative;
 }
 
+.video-preview .thumbnail-row .video-time {
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  background-color: black;
+  color: white;
+  font-family: roboto, arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 4px;
+  border-radius: 2px;
+}
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
