@@ -20,10 +20,12 @@
 .hamburger-menu {
   height: 24px;
   margin: 0 24px;
+  cursor: pointer;
 }
 
 .youtube-logo {
   height: 20px;
+  cursor: pointer;
 }
 .middle-section {
   flex: 1;
@@ -62,15 +64,22 @@
 }
 
 .search-button,
-.voice-search-button {
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-button .tooltip,
-.voice-search-button .tooltip {
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip {
   position: absolute;
   background-color: gray;
   color: white;
@@ -82,10 +91,14 @@
   transition: opacity 0.15s;
   pointer-events: none;
   white-space: nowrap;
+  font-family: Roboto, Arial;
 }
 
 .search-button:hover .tooltip,
-.voice-search-button:hover .tooltip {
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
   opacity: 1;
 }
 
@@ -145,5 +158,6 @@
 .current-user-picture {
   height: 32px;
   border-radius: 16px;
+  cursor: pointer;
   /* margin-right: ; */
 }
