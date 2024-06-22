@@ -32,41 +32,48 @@
 .channel-picture {
   position: relative;
 }
-
+/* percobaan */
 .profile-picture-container {
+  position: relative;
+  display: inline-block; /* supaya hover nya sebatas gambar, bukan full row, karena dasarnya div satu row, kalau inline-block hanya sebatas content, sehingga tooltip muncul saat hover gambar*/
+}
+.channel-tooltip {
   position: absolute;
   bottom: -80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 20px 12px 10px;
-  background-color: white;
-  z-index: 10;
-  white-space: nowrap;
-  pointer-events: none;
   opacity: 0;
-  border-radius: 8px;
-  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 18px 10px 10px;
+  pointer-events: none;
+  white-space: nowrap;
+  border-radius: 6px;
+  z-index: 300;
+  transition: opacity 0.15s;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.profile-picture-container img {
+.channel-tooltip img {
+  margin-right: 10px;
   border-radius: 40px;
-  margin-right: 9px;
   width: 60px;
+  height: 60px;
 }
 
-.profile-picture-container .title {
-  font-size: 18px;
+.channel-tooltip-name {
   font-weight: bold;
+  font-size: 18px;
   margin-bottom: 4px;
 }
-.profile-picture-container .subscribers-count {
-  color: #424042;
+
+.channel-tooltip-subscount {
+  color: #585858;
 }
 
-.profile-picture:hover .profile-picture-container {
+.profile-picture-container:hover .channel-tooltip {
   opacity: 1;
 }
+/* percobaan */
 .video-info .video-author {
   margin-bottom: 4px;
 }
