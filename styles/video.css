@@ -13,7 +13,6 @@
   bottom: 8px;
   background-color: black;
   color: white;
-  font-family: roboto, arial;
   font-size: 12px;
   font-weight: 500;
   padding: 4px 4px;
@@ -105,4 +104,30 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 15px;
   row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .video-author a,
+  .video-info .video-stats {
+    font-size: 14px;
+  }
+  .video-title a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

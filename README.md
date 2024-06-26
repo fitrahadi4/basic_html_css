@@ -1,4 +1,4 @@
-https://youtu.be/G3e-cpL7ofc?si=OqOVdqo4fAosGWi2&t=22067
+https://youtu.be/G3e-cpL7ofc?si=5I2VEIaQSKj32jcR&t=23408
 
 https://supersimple.dev/exercises/youtube
 
