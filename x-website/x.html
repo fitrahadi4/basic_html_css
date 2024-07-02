@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/left-sidebar.css" />
+    <style>
+      .main {
+        background-color: blue;
+        margin-left: 270px;
+        width: 600px;
+      }
+      .right-sidebar {
+        background-color: red;
+        width: 380px;
+      }
+
+      .left-profile-container {
+        display: flex;
+        margin-top: 20px;
+        position: absolute;
+        background-color: RED;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .profile-picture img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 20px;
+      }
+      .others img {
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left-sidebar">
+      <div class="logo">
+        <img src="/icons/x-logo.png" alt="" />
+      </div>
+
+      <div class="left-submenu-container">
+        <div class="submenu">
+          <div class="submenu-list">
+            <img src="/icons/x-home.png" alt="" />
+            <div>Beranda</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-jelajah.png" alt="" />
+            <div>Jelajah</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-notifikasi.png" alt="" />
+            <div>Notifikasi</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-pesan.png" alt="" />
+            <div>Pesan</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-grok.png" alt="" />
+            <div>Grok</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-daftar.png" alt="" />
+            <div>Daftar</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-markah.png" alt="" />
+            <div>Markah</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-komunitas.png" alt="" />
+            <div>Komunitas</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-premium.png" alt="" />
+            <div>Premium</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-organisasi-terverifikasi.png" alt="" />
+            <div>Organisasi Terverifikasi</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-profil.png" alt="" />
+            <div>Profil</div>
+          </div>
+          <div class="submenu-list">
+            <img src="/icons/x-lainnya.png" alt="" />
+            <div>Lainnya</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="left-posting-container">
+        <button class="posting-btn">Posting</button>
+      </div>
+
+      <div class="left-profile-container">
+        <div class="profile-picture">
+          <img src="/profile-pictures/1.jpg" alt="" />
+        </div>
+        <div>
+          <p>Belajar Menulis</p>
+          <p>@adisied</p>
+        </div>
+        <div class="others"><img src="icons/x-lain.png" alt="" /></div>
+      </div>
+    </div>
+    <div class="main">Main</div>
+    <div class="right-sidebar">Sidebar</div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+.left-sidebar {
+  /* background-color: red; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 270px;
+}
+.logo {
+  cursor: pointer;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+.logo img {
+  width: 44px;
+}
+.submenu {
+  display: inline-block;
+}
+.submenu-list:hover {
+  background-color: #a7a7a7;
+}
+.submenu-list {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px 20px 3px 5px;
+  border-radius: 20px;
+  font-size: 18px;
+  transition: background-color 0.08s;
+  margin-bottom: 25px;
+}
+
+.submenu-list img {
+  width: 28px;
+  margin-right: 21px;
+}
+
+.left-submenu-container {
+  margin-bottom: 3px;
+}
+
+.posting-btn {
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 15px 83px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
