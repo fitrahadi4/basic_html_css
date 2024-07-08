@@ -11,3 +11,6 @@ position
 relative membuat zindex berperan penting di header, karena yang pertama baris muncul akan ditimpa oleh baris berikutnya
 -absolute: untuk child saja
 -static: defaultnya
+
+Upload web ke internet
+https://youtu.be/p1QU3kLFPdg?si=MfwqPLAgyCORQ2ah&t=421

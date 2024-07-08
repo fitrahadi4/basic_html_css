@@ -5,3 +5,7 @@ body {
   font-family: "Segoe UI", Arial;
   box-sizing: border-box;
 }
+
+p {
+  margin: 0;
+}

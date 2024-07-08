@@ -8,91 +8,122 @@
     <link rel="stylesheet" href="styles/left-sidebar.css" />
     <style>
       .main {
-        background-color: blue;
-        margin-left: 270px;
-        width: 600px;
+        /* background-color: blue; */
+        margin-left: 262px;
+        width: 599px; /*610*/
+        border-left: 1px solid rgb(242, 242, 242);
+        border-right: 1px solid rgb(242, 242, 242);
+        margin-right: 10px;
       }
       .right-sidebar {
         background-color: red;
         width: 380px;
       }
-
-      .left-profile-container {
+      .category-post {
         display: flex;
-        margin-top: 20px;
-        position: absolute;
-        background-color: RED;
-        left: 0;
-        right: 0;
-        bottom: 0;
-      }
+        align-items: center;
+        height: 58px;
 
-      .profile-picture img {
+        text-align: center;
+        font-size: 15px;
+        color: gray;
+      }
+      .for-you-post,
+      .follower-post {
+        flex: 1;
+        border-bottom: 1px solid rgb(242, 242, 242);
+      }
+      .for-you-post .active {
+        display: inline-block;
+        border-bottom: 4px solid rgb(154, 154, 255);
+        padding: 12px 0;
+        font-weight: bold;
+        color: #000;
+      }
+      .not-active {
+        padding: 14px 0;
+      }
+      .post-editor {
+        display: flex;
+      }
+      .post-picture {
+        width: 60px;
+        /* background-color: red; */
+        text-align: center;
+        padding: 10px 5px;
+      }
+      .post-picture img {
         width: 40px;
-        height: 40px;
-        object-fit: cover;
-        object-position: top;
         border-radius: 20px;
       }
-      .others img {
-        width: 20px;
+      .post-text-editor {
+        flex: 1;
+      }
+      .text-editor input {
+        font-size: 20px;
+        border: none;
+        padding: 20px 0px;
+        width: 100%;
+      }
+      .text-editor input:focus {
+        outline: none;
       }
     </style>
   </head>
   <body>
     <div class="left-sidebar">
       <div class="logo">
-        <img src="/icons/x-logo.png" alt="" />
+        <img src="./icons/x-logo.png" alt="" />
       </div>
 
       <div class="left-submenu-container">
         <div class="submenu">
           <div class="submenu-list">
-            <img src="/icons/x-home.png" alt="" />
+            <img src="./icons/x-home.png" alt="" />
             <div>Beranda</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-jelajah.png" alt="" />
+            <img src="./icons/x-jelajah.png" alt="" />
             <div>Jelajah</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-notifikasi.png" alt="" />
+            <img src="./icons/x-notifikasi.png" alt="" />
             <div>Notifikasi</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-pesan.png" alt="" />
+            <img src="./icons/x-pesan.png" alt="" />
             <div>Pesan</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-grok.png" alt="" />
+            <img src="./icons/x-grok.png" alt="" />
             <div>Grok</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-daftar.png" alt="" />
+            <img src="./icons/x-daftar.png" alt="" />
             <div>Daftar</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-markah.png" alt="" />
+            <img src="./icons/x-markah.png" alt="" />
             <div>Markah</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-komunitas.png" alt="" />
+            <img src="./icons/x-komunitas.png" alt="" />
             <div>Komunitas</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-premium.png" alt="" />
+            <img src="./icons/x-premium.png" alt="" />
             <div>Premium</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-organisasi-terverifikasi.png" alt="" />
+            <img src="./icons/x-organisasi-terverifikasi.png" alt="" />
             <div>Organisasi Terverifikasi</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-profil.png" alt="" />
+            <img src="./icons/x-profil.png" alt="" />
             <div>Profil</div>
           </div>
           <div class="submenu-list">
-            <img src="/icons/x-lainnya.png" alt="" />
+            <img src="./icons/x-lainnya.png" alt="" />
             <div>Lainnya</div>
           </div>
         </div>
@@ -106,14 +137,38 @@
         <div class="profile-picture">
           <img src="/profile-pictures/1.jpg" alt="" />
         </div>
-        <div>
-          <p>Belajar Menulis</p>
-          <p>@adisied</p>
+        <div class="profile-detail">
+          <p class="profile-name">Belajar Menulis</p>
+          <p class="profile-id">@adisied</p>
         </div>
         <div class="others"><img src="icons/x-lain.png" alt="" /></div>
       </div>
     </div>
-    <div class="main">Main</div>
+
+    <div class="main">
+      <div class="category-post">
+        <div class="for-you-post"><div class="active">Untuk Anda</div></div>
+        <div class="follower-post"><div class="not-active">Mengikuti</div></div>
+      </div>
+      <div class="post-editor">
+        <div class="post-picture">
+          <img src="../channel-pictures/channel-1.jpeg" alt="" />
+        </div>
+        <div class="post-text-editor">
+          <div class="text-editor">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Apa yang sedang hangat dibicarakan?!"
+            />
+          </div>
+          <div class="tools-editor">tools editor</div>
+        </div>
+      </div>
+      <div>Tampilkan teks jumlah postingan baru muncul</div>
+      <div>Postingan orang</div>
+    </div>
     <div class="right-sidebar">Sidebar</div>
   </body>
 </html>
