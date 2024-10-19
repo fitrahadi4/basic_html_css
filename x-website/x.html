@@ -6,67 +6,90 @@
     <title>X</title>
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/left-sidebar.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <style>
-      .main {
-        /* background-color: blue; */
-        margin-left: 262px;
-        width: 599px; /*610*/
-        border-left: 1px solid rgb(242, 242, 242);
-        border-right: 1px solid rgb(242, 242, 242);
-        margin-right: 10px;
-      }
       .right-sidebar {
-        background-color: red;
-        width: 380px;
-      }
-      .category-post {
-        display: flex;
-        align-items: center;
-        height: 58px;
-
-        text-align: center;
-        font-size: 15px;
-        color: gray;
-      }
-      .for-you-post,
-      .follower-post {
-        flex: 1;
-        border-bottom: 1px solid rgb(242, 242, 242);
-      }
-      .for-you-post .active {
-        display: inline-block;
-        border-bottom: 4px solid rgb(154, 154, 255);
-        padding: 12px 0;
-        font-weight: bold;
-        color: #000;
-      }
-      .not-active {
-        padding: 14px 0;
-      }
-      .post-editor {
-        display: flex;
-      }
-      .post-picture {
-        width: 60px;
         /* background-color: red; */
-        text-align: center;
-        padding: 10px 5px;
+        width: 349px;
       }
-      .post-picture img {
-        width: 40px;
-        border-radius: 20px;
+
+      .box-search {
+        display: flex;
+        padding-top: 4px;
+        position: relative;
+        margin-bottom: 16px;
       }
-      .post-text-editor {
-        flex: 1;
+
+      .box-search img {
+        width: 19px;
+        position: absolute;
+        top: 17px;
+        left: 19px;
       }
-      .text-editor input {
-        font-size: 20px;
+
+      .box-search input {
+        padding: 14px;
         border: none;
-        padding: 20px 0px;
+        background-color: #eff3f4;
+        font-size: 15px;
+        border-radius: 25px;
         width: 100%;
+        padding-left: 56px;
       }
-      .text-editor input:focus {
-        outline: none;
+      .berlangganan,
+      .trending-container {
+        border: 1px solid rgb(242, 242, 242);
+        padding: 10px 16px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+      }
+      .berlangganan h1,
+      .trending-container h1 {
+        font-size: 20px;
+        font-weight: 800;
+        margin: 0;
+        margin-bottom: 8px;
+      }
+      .berlangganan p {
+        font-size: 15px;
+      }
+      .berlangganan button {
+        margin-top: 9px;
+        background-color: #0f1419;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 17px;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .trending-container {
+        border: 1px solid rgb(242, 242, 242);
+      }
+      .trending-header {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: green; */
+      }
+      .trending-header p {
+        color: gray;
+        font-size: 13px;
+      }
+      .trending-header img {
+        width: 18px;
+      }
+      .trending-description {
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .trending-count {
+        color: gray;
+        font-size: 13px;
+        margin-top: 4px;
+      }
+      .trending-post {
+        margin-top: 25px;
       }
     </style>
   </head>
@@ -163,12 +186,180 @@
               placeholder="Apa yang sedang hangat dibicarakan?!"
             />
           </div>
-          <div class="tools-editor">tools editor</div>
+          <div class="tools-container">
+            <div class="tools-editor">
+              <img src="./icons/x-upload-img.png" alt="" />
+              <img src="./icons/x-upload-gif.png" alt="" />
+              <img src="./icons/x-jajak-pendapat.png" alt="" />
+              <img src="./icons/x-emoji.png" alt="" />
+              <img src="./icons/x-jadwal.png" alt="" />
+              <img src="./icons/x-location.png" alt="" />
+            </div>
+            <div class="posting-container">
+              <button>Posting</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div>Tampilkan teks jumlah postingan baru muncul</div>
-      <div>Postingan orang</div>
+
+      <div class="new-coming-post">Tampilkan 70 postingan</div>
+
+      <div class="show-posting">
+        <div class="post-picture">
+          <img src="../channel-pictures/channel-1.jpeg" alt="" />
+        </div>
+        <div class="post-container">
+          <div class="title-container">
+            <div>Crazy Clips<span>@crazyclipsonly &#183; 16 Jul</span></div>
+            <div class="others"><img src="icons/x-lain.png" alt="" /></div>
+          </div>
+          <div class="desc-post">Isi Posting</div>
+          <div class="video-post">
+            <video width="100%" height="100%" controls>
+              <source src="./media/cat.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="post-tools-container">
+            <div class="tools-post">
+              <img src="./icons/x-comment.png" alt="" /> <span>498</span>
+            </div>
+            <div class="tools-post">
+              <img src="./icons/x-retweet.png" alt="" /> <span>5 rb</span>
+            </div>
+            <div class="tools-post">
+              <img src="./icons/x-favorite.png" alt="" /> <span>28 rb</span>
+            </div>
+            <div class="tools-post">
+              <img src="./icons/x-statistik.png" alt="" /> <span>7 jt</span>
+            </div>
+
+            <div class="tools-kanan">
+              <img src="./icons/x-markah.png" alt="" />
+              <img src="./icons/x-upload.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="show-posting">
+        <div class="post-picture">
+          <img src="../channel-pictures/channel-1.jpeg" alt="" />
+        </div>
+        <div class="post-container">
+          <div class="title-container">
+            <div>Crazy Clips<span>@crazyclipsonly &#183; 16 Jul</span></div>
+            <div class="others"><img src="icons/x-lain.png" alt="" /></div>
+          </div>
+          <div class="desc-post">Isi Posting</div>
+          <div class="video-post">
+            <video width="100%" height="100%" controls>
+              <source src="./media/cat.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="post-tools-container">
+            <div class="tools-post">
+              <img src="./icons/x-comment.png" alt="" /> <span>498</span>
+            </div>
+            <div class="tools-post">
+              <img src="./icons/x-retweet.png" alt="" /> <span>5 rb</span>
+            </div>
+            <div class="tools-post">
+              <img src="./icons/x-favorite.png" alt="" /> <span>28 rb</span>
+            </div>
+            <div class="tools-post">
+              <img src="./icons/x-statistik.png" alt="" /> <span>7 jt</span>
+            </div>
+
+            <div class="tools-kanan">
+              <img src="./icons/x-markah.png" alt="" />
+              <img src="./icons/x-upload.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="right-sidebar">Sidebar</div>
+
+    <div class="right-sidebar">
+      <div class="box-search">
+        <img src="./icons/x-jelajah.png" alt="" />
+        <input type="text" placeholder="Cari" />
+      </div>
+      <div class="berlangganan">
+        <h1>Berlangganan Premium</h1>
+        <p>
+          Berlangganan untuk mengakses fitur-fitur baru dan, jika memenuhi
+          syarat, menerima bagi hasil dari pendapatan iklan.
+        </p>
+        <button>Berlangganan</button>
+      </div>
+      <div class="trending-container">
+        <h1>Tren untuk Anda</h1>
+
+        <div class="trending-post">
+          <div class="trending-header">
+            <p>Sedang tren dalam topik Indonesia</p>
+            <img src="./icons/x-lain.png" alt="" />
+          </div>
+          <p class="trending-description">Enaknya</p>
+          <p class="trending-count">4.807 posts</p>
+        </div>
+        <div class="trending-post">
+          <div class="trending-header">
+            <p>Sedang tren dalam topik Indonesia</p>
+            <img src="./icons/x-lain.png" alt="" />
+          </div>
+          <p class="trending-description">Bandung</p>
+          <p class="trending-count">9.641 posts</p>
+        </div>
+        <div class="trending-post">
+          <div class="trending-header">
+            <p>Sedang tren dalam topik Indonesia</p>
+            <img src="./icons/x-lain.png" alt="" />
+          </div>
+          <p class="trending-description">Tolol</p>
+          <p class="trending-count">11,4 rb posts</p>
+        </div>
+        <div class="trending-post">
+          <div class="trending-header">
+            <p>Sedang tren dalam topik Indonesia</p>
+            <img src="./icons/x-lain.png" alt="" />
+          </div>
+          <p class="trending-description">Jokowi</p>
+          <p class="trending-count">1.334 posts</p>
+        </div>
+        <div class="trending-post">
+          <div class="trending-header">
+            <p>Sedang tren dalam topik Indonesia</p>
+            <img src="./icons/x-lain.png" alt="" />
+          </div>
+          <p class="trending-description">Jepang</p>
+          <p class="trending-count">54,2 rb posts</p>
+        </div>
+        <div class="trending-post">
+          <div class="trending-header">
+            <p>Sedang tren dalam topik Indonesia</p>
+            <img src="./icons/x-lain.png" alt="" />
+          </div>
+          <p class="trending-description">Darto</p>
+          <!-- <p class="trending-count">54,2 rb posts</p> -->
+        </div>
+        <div class="trending-post">
+          <div class="trending-header">
+            <p>Sedang tren dalam topik Indonesia</p>
+            <img src="./icons/x-lain.png" alt="" />
+          </div>
+          <p class="trending-description">Mantap</p>
+          <p class="trending-count">41,2 rb posts</p>
+        </div>
+        <div class="trending-post">
+          <div class="trending-header">
+            <p>Sedang tren dalam topik Indonesia</p>
+            <img src="./icons/x-lain.png" alt="" />
+          </div>
+          <p class="trending-description">Kepala BSSN</p>
+          <p class="trending-count">2.357 posts</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

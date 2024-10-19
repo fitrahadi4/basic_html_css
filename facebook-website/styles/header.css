@@ -1,0 +1,97 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.fb-logo {
+  width: 40px;
+  cursor: pointer;
+}
+.search {
+  position: relative;
+  margin-left: 10px;
+}
+.search-icon {
+  width: 15px;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+}
+.search-bar {
+  background-color: #f0f2f5;
+  border: none;
+  padding: 12px 32px 12px 35px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.fb-icons {
+  display: flex;
+
+  /* width: 600px; */
+}
+.fb-icon-container {
+  padding: 17px 50px 9px;
+  margin-right: 14px;
+  /* background-color: red; */
+}
+.active {
+  border-bottom: 3px solid blue;
+}
+.fb-icon {
+  width: 24px;
+  cursor: pointer;
+}
+.fb-app {
+  background-color: #e4e6eb;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+.fb-app,
+.fb-profile-photo {
+  margin-right: 8px;
+}
+.fb-app-icon {
+  width: 20px;
+}
+.fb-apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  /* padding-right: 24px; */
+  padding-right: 10px;
+  /* margin-left: 90px; */
+  margin-left: 105px;
+}
+.fb-profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+
+.fb-profile-photo-sm {
+  width: 32px;
+  height: 32px;
+  border-radius: 25px;
+}
+
+.fb-profile-photo-md {
+  width: 36px;
+  height: 36px;
+  border-radius: 25px;
+}

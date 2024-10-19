@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/left-main.css" />
+    <style>
+      .main {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .right {
+        width: 325px;
+        /* background-color: red; */
+        margin-right: 19px;
+      }
+      .story-container {
+        width: 140px;
+        height: 250px;
+        background-color: black;
+        border-radius: 12px;
+        margin-right: 7px;
+      }
+
+      .story-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+        border-radius: inherit;
+        opacity: 0.7;
+      }
+      .story-description {
+        position: relative;
+      }
+      .story-description p {
+        position: absolute;
+        bottom: 12px;
+        left: 12px;
+        font-size: 13px;
+        color: white;
+        font-weight: 600;
+      }
+      .story-profile {
+        position: relative;
+      }
+      .story-profile img {
+        position: absolute;
+        bottom: 200px;
+        left: 12px;
+        width: 33px;
+        height: 33px;
+        border-radius: 25px;
+        border: 4px solid rgb(86, 86, 255);
+        opacity: 1;
+      }
+      .online {
+        position: absolute;
+        bottom: 200px;
+        left: 42px;
+        width: 8px;
+        height: 8px;
+        background-color: #31a24c;
+        border: 2px solid white;
+        border-radius: 10px;
+      }
+      .stories {
+        display: flex;
+        /* background-color: red; */
+        width: 665px;
+        margin-bottom: 20px;
+      }
+      .status-container {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 13px 15px 9px 15px;
+        border-radius: 8px;
+      }
+      .status-post {
+        background-color: #f0f2f5;
+        border: none;
+        font-size: 17px;
+        padding: 10px 13px;
+        width: 95.3%;
+        border-radius: 18px;
+      }
+      .status-post-container {
+        width: 100%;
+      }
+
+      .tengah {
+        width: 680px;
+      }
+
+      .upload-button {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+      .upload-button img {
+        margin-right: 8px;
+      }
+      .upload-button p {
+        font-size: 15px;
+        color: rgb(90, 90, 90);
+      }
+      .status-parent,
+      .postingan {
+        background-color: #fff;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .status-parent .border {
+        margin-right: 15px;
+      }
+      .upload-button-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 16px 0;
+      }
+      .img-fb-world {
+        width: 12px;
+        height: 12px;
+        margin-left: 3px;
+      }
+      .post-header {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .post-subheader {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+      }
+      .post-header-container {
+        display: flex;
+        align-items: center;
+        padding: 15px 24px 7px 15px;
+      }
+      .post-header-tengah {
+        margin-left: 2px;
+        flex: 1;
+      }
+      .action-button-container {
+        display: flex;
+        align-items: center;
+        width: 56px;
+        justify-content: space-between;
+      }
+      .action-button {
+        width: 20px;
+      }
+      .isi-posting {
+        /* padding-right: 24px;
+        padding-left: 15px; */
+        padding: 0 24px 12px 15px;
+      }
+      .img-posting-container {
+        width: 100%;
+        height: 611px;
+      }
+      .img-posting {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        object-position: right;
+      }
+      /* pic inside div 500x625 
+        div 680x611
+      */
+      .fb-icon img {
+        width: 19px;
+      }
+      .fb-emote-container {
+        display: flex;
+        padding: 15px;
+      }
+      .gray {
+        color: rgb(101, 103, 107);
+      }
+      .flex-display-center {
+        display: flex;
+        align-items: center;
+      }
+      .flex-display-sb {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 16px;
+      }
+      .flex-display-sb1 {
+        display: flex;
+        width: 150px;
+        justify-content: space-evenly;
+      }
+      .flex-display-sb2 {
+        display: flex;
+        justify-content: space-between;
+      }
+      .flex-display-sa {
+        display: flex;
+        justify-content: space-around;
+        padding: 7.5px 16px;
+      }
+      .flex-display {
+        display: flex;
+      }
+      .flex-display-center {
+        display: flex;
+        align-items: center;
+      }
+      .fontsize18 {
+        font-size: 18px;
+      }
+      .fontsize15 {
+        font-size: 15px;
+      }
+      .fontsize13 {
+        font-size: 13px;
+      }
+      .fontsize12 {
+        font-size: 12px;
+      }
+      .margin-left4 {
+        margin-left: 4px;
+      }
+      .margin6 {
+        margin: 0 6px;
+      }
+      .margin-right15 {
+        margin-right: 15px;
+      }
+      .margin-right8 {
+        margin-right: 8px;
+      }
+      .margin-left15 {
+        margin-left: 15px;
+      }
+      .margin-left12 {
+        margin-left: 12px;
+      }
+      .margin-top10 {
+        margin-top: 10px;
+      }
+      .margin-top12 {
+        margin-top: 12px;
+      }
+      .margin-bottom10 {
+        margin-bottom: 10px;
+      }
+      .width-img22 {
+        width: 20px;
+      }
+      .width-img57 {
+        width: 57px;
+      }
+      .width-img18 {
+        width: 16px;
+        height: 16px;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .message-bubble {
+        background-color: #f0f2f5;
+        padding: 8px 12px;
+        border-radius: 12px;
+        display: inline-block;
+      }
+      .line-height1608 {
+        line-height: 16.08px;
+      }
+      .line-height1995 {
+        line-height: 19.9995px;
+      }
+      .input-comment {
+        background-color: #f0f2f5;
+        border: none;
+        padding: 10px 145px 10px 10px;
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 8px;
+        margin-right: 16px;
+      }
+      .test {
+        width: 47px;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .position-relative {
+        position: relative;
+      }
+      .comment-emote-container {
+        position: absolute;
+        right: 15px;
+        top: 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <img class="fb-logo" src="./icons/fb-icons.svg" alt="" />
+        <div class="search">
+          <img class="search-icon" src="./icons/fb-search.png" alt="" />
+          <input
+            class="search-bar"
+            type="text"
+            placeholder="Cari di Facebook"
+          />
+        </div>
+      </div>
+
+      <div class="fb-icons">
+        <div class="fb-icon-container active">
+          <img class="fb-icon" src="./icons/fb-home.png" alt="" />
+        </div>
+        <div class="fb-icon-container">
+          <img class="fb-icon" src="./icons/fb-friends.png" alt="" />
+        </div>
+        <div class="fb-icon-container">
+          <img class="fb-icon" src="./icons/fb-flags.png" alt="" />
+        </div>
+        <div class="fb-icon-container">
+          <img class="fb-icon" src="./icons/fb-marketplace.png" alt="" />
+        </div>
+        <div class="fb-icon-container">
+          <img class="fb-icon" src="./icons/fb-groups.png" alt="" />
+        </div>
+      </div>
+
+      <div class="fb-apps">
+        <div class="fb-app">
+          <img class="fb-app-icon" src="./icons/fb-apps.png" alt="" />
+        </div>
+        <div class="fb-app">
+          <img class="fb-app-icon" src="./icons/fb-messanger.png" alt="" />
+        </div>
+        <div class="fb-app">
+          <img class="fb-app-icon" src="./icons/fb-notification.png" alt="" />
+        </div>
+        <img class="fb-profile-photo" src="./profile-photo/7.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="left">
+        <div>
+          <div class="header-left menu-left">
+            <img class="fb-profile-photo" src="./profile-photo/7.jpg" alt="" />
+            <p class="fb-text">Djibril Kawasima</p>
+          </div>
+          <div class="header-left menu-left">
+            <img
+              class="fb-profile-photo"
+              src="./icons/fb-friend-color.png"
+              alt=""
+            />
+            <p class="fb-text">Teman</p>
+          </div>
+          <div class="header-left menu-left">
+            <img
+              class="fb-profile-photo"
+              src="./icons/fb-memories-color.png"
+              alt=""
+            />
+            <p class="fb-text">Kenangan</p>
+          </div>
+          <div class="header-left menu-left">
+            <img
+              class="fb-profile-photo"
+              src="./icons/fb-saved-color.png"
+              alt=""
+            />
+            <p class="fb-text">Tersimpan</p>
+          </div>
+          <div class="header-left menu-left">
+            <img
+              class="fb-profile-photo"
+              src="./icons/fb-groups-color.png"
+              alt=""
+            />
+            <p class="fb-text">Grup</p>
+          </div>
+          <div class="header-left menu-left">
+            <img
+              class="fb-profile-photo"
+              src="./icons/fb-video-color.png"
+              alt=""
+            />
+            <p class="fb-text">Video</p>
+          </div>
+          <div class="header-left menu-left">
+            <img class="fb-profile-photo" src="./icons/fb-market.png" alt="" />
+            <p class="fb-text">Marketplace</p>
+          </div>
+          <div class="header-left menu-left">
+            <img class="fb-profile-photo" src="./icons/fb-feed.png" alt="" />
+            <p class="fb-text">Kabar</p>
+          </div>
+          <div class="header-left menu-left">
+            <div class="bg-gray">
+              <img class="" src="./icons/fb-drop.png" alt="" />
+            </div>
+            <p class="fb-text">Lihat selengkapnya</p>
+          </div>
+        </div>
+
+        <div class="border"></div>
+
+        <div>
+          <p class="pintasan">Pintasan Anda</p>
+
+          <div class="header-left menu-left pintasan-list">
+            <img class="fb-profile-photo" src="./icons/icon5.jpg" alt="" />
+            <p class="fb-text">Ｃａｔａｔａｎ Ｍｕｓｌｉｍａｈ ツ</p>
+          </div>
+
+          <div class="header-left menu-left pintasan-list">
+            <img class="fb-profile-photo" src="./icons/icon4.png" alt="" />
+            <p class="fb-text">
+              Honor of Kings of Glory - Ramah Newbie 🛡️ (Yang Ga Ramah, Auto
+              Kick)
+            </p>
+          </div>
+
+          <div class="header-left menu-left pintasan-list">
+            <img class="fb-profile-photo" src="./icons/icon1.jpg" alt="" />
+            <p class="fb-text">Jagat Konsultasi dan Pembahasan Komputer</p>
+          </div>
+
+          <div class="header-left menu-left pintasan-list">
+            <img class="fb-profile-photo" src="./icons/icon6.png" alt="" />
+            <p class="fb-text">Keluh Basah Bermain HOK</p>
+          </div>
+
+          <div class="header-left menu-left pintasan-list">
+            <img class="fb-profile-photo" src="./icons/icon2.jpg" alt="" />
+            <p class="fb-text">RANDOM VIDEOS ON INTERNET</p>
+          </div>
+
+          <div class="header-left menu-left">
+            <div class="bg-gray">
+              <img class="" src="./icons/fb-drop.png" alt="" />
+            </div>
+            <p class="fb-text">Lihat selengkapnya</p>
+          </div>
+        </div>
+        <div class="about">
+          <p>
+            Privasi &#183; Ketentuan &#183; Iklan &#183; Pilihan Iklan &#183;
+            Cookie &#183; Lainnya &#183; Meta &copy; 2024
+          </p>
+        </div>
+      </div>
+
+      <div class="tengah">
+        <div class="stories">
+          <div class="story-container">
+            <img src="./thumbnail/thumbnail-1.webp" alt="" />
+            <div class="story-description">
+              <div class="story-profile">
+                <img src="./profile-photo/7.jpg" alt="" />
+                <div class="online"></div>
+              </div>
+              <p>Judo Twins</p>
+            </div>
+          </div>
+          <div class="story-container">
+            <img src="./thumbnail/thumbnail-1.webp" alt="" />
+            <div class="story-description">
+              <div class="story-profile">
+                <img src="./profile-photo/7.jpg" alt="" />
+                <div class="online"></div>
+              </div>
+              <p>Judo Twins</p>
+            </div>
+          </div>
+          <div class="story-container">
+            <img src="./thumbnail/thumbnail-1.webp" alt="" />
+            <div class="story-description">
+              <div class="story-profile">
+                <img src="./profile-photo/7.jpg" alt="" />
+                <div class="online"></div>
+              </div>
+              <p>Judo Twins</p>
+            </div>
+          </div>
+          <div class="story-container">
+            <img src="./thumbnail/thumbnail-1.webp" alt="" />
+            <div class="story-description">
+              <div class="story-profile">
+                <img src="./profile-photo/7.jpg" alt="" />
+                <div class="online"></div>
+              </div>
+              <p>Judo Twins</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="status-parent">
+          <div class="status-container">
+            <div>
+              <img
+                class="fb-profile-photo"
+                src="./profile-photo/7.jpg"
+                alt=""
+              />
+            </div>
+            <div class="status-post-container">
+              <input
+                class="status-post"
+                type="text"
+                placeholder="Apa yang Anda pikirkan, Djibril?"
+              />
+            </div>
+          </div>
+
+          <div class="border"></div>
+
+          <div class="upload-button-container">
+            <div class="upload-button">
+              <img src="./icons/fb-video-upload.png" alt="" />
+              <p>Video siaran langsung</p>
+            </div>
+            <div class="upload-button">
+              <img src="./icons/fb-image-upload.png" alt="" />
+              <p>Foto/Video</p>
+            </div>
+            <div class="upload-button">
+              <img src="./icons/fb-emote-upload.png" alt="" />
+              <p>Perasaan/Aktivitas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="postingan">
+          <div class="post-header-container">
+            <div>
+              <!--pintasan-list-->
+              <img
+                class="fb-profile-photo"
+                src="./profile-photo/7.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="post-header-tengah">
+              <p class="post-header">Kyou Hobby Shop</p>
+              <p class="post-subheader gray">
+                2 jam &#183;
+                <img class="img-fb-world" src="./icons/fb-world.png" alt="" />
+              </p>
+            </div>
+
+            <div class="action-button-container">
+              <img class="action-button" src="./icons/fb-dots.png" alt="" />
+              <img class="action-button" src="./icons/fb-cross.png" alt="" />
+            </div>
+          </div>
+
+          <div class="isi-posting">"anime recommendation"</div>
+
+          <div class="img-posting-container">
+            <img class="img-posting" src="./thumbnail/1.jpg" alt="" />
+          </div>
+
+          <div class="flex-display-sb">
+            <div class="fb-icon flex-display">
+              <img src="./icons/fb-smile.svg" alt="" />
+              <img src="./icons/fb-likes.svg" alt="" />
+              <p class="gray fontsize15 margin-left4">115</p>
+            </div>
+            <div class="flex-display">
+              <p class="gray fontsize15 margin6">212 komentar</p>
+              <p class="gray fontsize15 margin6">12 Kali dibagikan</p>
+            </div>
+          </div>
+          <div class="border margin-right15"></div>
+          <div class="flex-display-sa">
+            <div class="flex-display-center">
+              <img src="./icons/fb-like.png" alt="" />
+              <p class="gray fontsize15 margin-left4">Suka</p>
+            </div>
+            <div class="flex-display-center">
+              <img src="./icons/fb-comment.png" alt="" />
+              <p class="gray fontsize15 margin-left4">Komentari</p>
+            </div>
+            <div class="flex-display-center">
+              <img src="./icons/fb-wa.png" alt="" />
+              <p class="gray fontsize15 margin-left4">Kirim</p>
+            </div>
+            <div class="flex-display-center">
+              <img src="./icons/fb-share.png" alt="" />
+              <p class="gray fontsize15 margin-left4">Bagikan</p>
+            </div>
+          </div>
+          <div class="border margin-right15"></div>
+          <div>
+            <div class="margin-top10 margin-bottom10">
+              <span class="gray fontsize15 margin-left15">Lihat Komentar</span>
+            </div>
+            <div class="flex-display">
+              <div class="margin-right8">
+                <img
+                  class="fb-profile-photo-sm margin-left15"
+                  src="./profile-photo/7.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="fontsize13 message-bubble">
+                  <p class="bold line-height1608">Josua Fernando</p>
+                  <p class="line-height1995">Support kondisional</p>
+                </div>
+                <div class="fontsize12 gray flex-display">
+                  <p class="margin-left12 margin-right8">2 jam</p>
+                  <p class="margin-left4 margin-right8">Suka</p>
+                  <p class="margin-left4 margin-right8">Balas</p>
+                  <p class="margin-left4">Bagikan</p>
+                </div>
+                <div class="margin-top10 margin-bottom10">
+                  <span class="gray fontsize15">Lihat semua balasan</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex-display">
+              <div class="margin-right8 test">
+                <img
+                  class="fb-profile-photo-sm margin-left15"
+                  src="./profile-photo/7.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="flex-display flex1 position-relative">
+                <input
+                  class="input-comment"
+                  type="text"
+                  placeholder="Tulis komentar publik..."
+                />
+                <div class="comment-emote-container">
+                  <div class="flex-display-sb1">
+                    <img
+                      class="width-img18"
+                      src="./icons/cool-icon.png"
+                      alt=""
+                    />
+                    <img
+                      class="width-img18"
+                      src="./icons/smile-icon.png"
+                      alt=""
+                    />
+                    <img
+                      class="width-img18"
+                      src="./icons/camera-icon.png"
+                      alt=""
+                    />
+                    <img
+                      class="width-img18"
+                      src="./icons/gif-icon.png"
+                      alt=""
+                    />
+                    <img
+                      class="width-img18"
+                      src="./icons/notes-icon.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="flex-display-sb2">
+          <div class="gray fontsize18">Kontak</div>
+          <div class="width-img57 flex-display-sb2">
+            <img class="width-img18" src="./icons/fb-search.png" alt="" />
+            <img class="width-img18" src="./icons/fb-dots.png" alt="" />
+          </div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Radia Fitrianingsih</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Rusdianto</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Jhan Open Close</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Kurnia Agustina</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Sesy asnalisa</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Reza Tanjung</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Arldy D. Ebonn</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Shendry Bhamastaji</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Dinas Pmptsp-ksb</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Doni Hadi</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Muhammad Zainur Rodhi</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Qvillyah Rizky</p></div>
+        </div>
+        <div class="flex-display-center margin-top12">
+          <div class="margin-right15">
+            <img
+              class="fb-profile-photo-md"
+              src="./profile-photo/7.jpg"
+              alt=""
+            />
+          </div>
+          <div><p class="fontsize15">Nisa Thaliza</p></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

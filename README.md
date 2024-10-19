@@ -12,5 +12,27 @@ relative membuat zindex berperan penting di header, karena yang pertama baris mu
 -absolute: untuk child saja
 -static: defaultnya
 
+++++++++++++++++++++++++++++++++++++
+
 Upload web ke internet
-https://youtu.be/p1QU3kLFPdg?si=MfwqPLAgyCORQ2ah&t=421
+https://youtu.be/p1QU3kLFPdg?si=kD2zMOtleXDgmQOQ&t=1732
+
+name domain website (recommend):
+www.namecheap.com (global)
+www.rumahweb.com (lokal)
+
+cvbsd.dev
+++++++++++++++++++++++++++++++++++
+
+JS Full
+https://youtu.be/EerdGm-ehJQ?si=ukIo3theIw-UORl8&t=19947
+
+supersimple.dev/js-basics
+supersimple.dev/projects/amazon
+supersimple.dev/projects/variables/
+supersimple.dev/projects/calculator/
+supersimple.dev/projects/booleans/
+supersimple.dev/projects/objects
+
+assets fb icon
+https://www.flaticon.com/packs/facebook-ui-1

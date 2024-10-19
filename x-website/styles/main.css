@@ -1,0 +1,141 @@
+.main {
+  /* background-color: blue; */
+  margin-left: 262px;
+  width: 599px; /*610*/
+  border-left: 1px solid rgb(242, 242, 242);
+  border-right: 1px solid rgb(242, 242, 242);
+  margin-right: 30px;
+}
+
+.category-post {
+  display: flex;
+  align-items: center;
+  height: 58px;
+
+  text-align: center;
+  font-size: 15px;
+  color: gray;
+}
+.for-you-post,
+.follower-post {
+  flex: 1;
+  border-bottom: 1px solid rgb(242, 242, 242);
+}
+.for-you-post .active {
+  display: inline-block;
+  border-bottom: 4px solid rgb(154, 154, 255);
+  padding: 12px 0;
+  font-weight: bold;
+  color: #000;
+}
+.not-active {
+  padding: 14px 0;
+}
+.post-editor {
+  display: flex;
+}
+.post-picture {
+  width: 60px;
+  text-align: center;
+  padding: 10px 1px 10px 5px;
+}
+.post-picture img {
+  width: 40px;
+  border-radius: 20px;
+}
+.post-text-editor {
+  flex: 1;
+}
+.text-editor input {
+  font-size: 20px;
+  border: none;
+  padding: 20px 0px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+.text-editor input:focus {
+  outline: none;
+}
+.tools-editor img {
+  width: 20px;
+  color: #1d9bf0;
+  margin-right: 12px;
+}
+.tools-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.posting-container {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+.posting-container button {
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 9px 17px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-right: 16px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.new-coming-post {
+  text-align: center;
+  color: #1d9bf0;
+  padding: 12px 0;
+  border-top: 1px solid rgb(242, 242, 242);
+  border-bottom: 1px solid rgb(242, 242, 242);
+}
+.show-posting {
+  display: flex;
+  padding: 14px 0;
+  border-bottom: 1px solid rgb(242, 242, 242);
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+.title-container div {
+  font-weight: bold;
+}
+.title-container div span {
+  color: rgb(110, 110, 110);
+  font-weight: 400;
+}
+.post-container {
+  flex: 1;
+  padding-right: 16px;
+}
+.desc-post {
+  padding-bottom: 10px;
+}
+
+video {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.post-tools-container {
+  display: flex;
+  margin-top: 12px;
+}
+.tools-post {
+  font-size: 13px;
+  color: rgb(99, 99, 99);
+  display: flex;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+}
+.tools-post img,
+.tools-kanan img {
+  width: 18px;
+  margin-right: 4px;
+}
+.tools-kanan {
+  cursor: pointer;
+}
