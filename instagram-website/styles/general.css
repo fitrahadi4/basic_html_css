@@ -1,0 +1,163 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+}
+
+body{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.display-flex {
+    display: flex;
+}
+.display-flex-align-center {
+    display: flex;
+    align-items: center;    
+}
+.display-flex-align-justify-center {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.display-flex-column-align-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.display-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.center-container, .rest{
+    flex: 1;
+}
+
+.right-container {
+    background-color: lightblue;
+    width: 364px;
+}
+
+/* PADDING CSS */
+.padding-left16 {
+    padding-left: 16px;
+}
+.padding-left5 {
+    padding-left: 5px;
+}
+.padding-main {
+    padding: 0 300px;
+}
+
+.padding-10atas-bawah {
+    padding: 24px 0;
+}
+
+/* MARGIN CSS */
+.margin-left245 {
+    margin-left: 245px;
+}
+.margin-left8 {
+    margin-left: 8px;
+}
+.margin-right6 {
+    margin-right: 6px;
+}
+.margin-right8 {
+    margin-right: 8px;
+}
+
+.margin-right40{
+    margin-right: 40px;
+}
+
+.margin-top2 {
+    margin-top: 2px;
+}
+.margin-top4 {
+    margin-top: 4px;
+}
+.margin-top6 {
+    margin-top: 6px;
+}
+.margin-top8 {
+    margin-top: 8px;
+}
+
+.margin-bottom4 {
+    margin-bottom: 4px;
+}
+.margin-bottom8 {
+    margin-bottom: 8px;
+}
+
+.margin-bottom12 {
+    margin-bottom: 12px;
+}
+.bold {
+    font-weight: 700;
+}
+
+.img-circle {
+    width: 24px;
+    border-radius: 13px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+/* FONT COLOR CSS */
+.font-color-gray {
+    color: gray;
+}
+
+.font-color-gray1 {
+    color: rgb(115, 115, 115)
+}
+.font-weight-normal {
+    font-weight: 400;
+}
+.test {
+    background-color: red;
+}
+
+/* FONT SIZE CSS */
+.font12 {
+    font-size: 12px;
+}
+.font14 {
+    font-size: 14px;
+}
+
+/* WIDTH SIZE CSS */
+.width-468 {
+    width: 468px;
+}
+
+.width-24 {
+    width: 24px;
+}
+
+.width-13 {
+    width: 13px;
+    height: 13px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.edited-link {
+    text-decoration: none;
+}
+
+.border-none {
+    border: none;
+}
+input:focus {
+    outline: none;
+}

@@ -1,0 +1,43 @@
+.left-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 220px;
+    padding: 8px 12px 20px 12px;
+    border-right-color: rgb(219, 219, 219);
+    border-right-style: solid;
+    border-right-width: 1px;
+    
+}
+
+.left-menu {
+    padding: 12px;
+    margin: 8px 0;
+}
+.left-menu-top {
+    padding: 12px;
+    margin: 4px 0 ;
+}
+
+.left-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.logo {
+    padding: 33px 12px 16px 12px;
+    margin-bottom: 19px;
+    height: 24px;
+}
+
+.left-menu-list {
+    flex: 1;
+}
+.left-menu-other {
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+}
