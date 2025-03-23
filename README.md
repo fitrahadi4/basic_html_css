@@ -25,7 +25,7 @@ cvbsd.dev
 ++++++++++++++++++++++++++++++++++
 
 JS Full
-https://youtu.be/EerdGm-ehJQ?si=VViAEylOUhZH-WeM&t=27733
+https://youtu.be/EerdGm-ehJQ?si=zezi3uUbfLTcAhxR&t=31359
 
 supersimple.dev/js-basics
 supersimple.dev/projects/amazon
@@ -36,6 +36,9 @@ supersimple.dev/projects/objects
 supersimple.dev/projects/dom
 supersimple.dev/projects/dom-with-css/
 supersimple.dev/projects/rock-paper-scissors/
+supersimple.dev/projects/calculator-final/
+supersimple.dev/projects/arrays/
+
 
 assets fb icon
 https://www.flaticon.com/packs/facebook-ui-1

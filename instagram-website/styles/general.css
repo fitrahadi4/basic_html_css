@@ -23,6 +23,10 @@ input {
     align-items: center;    
     justify-content: center;
 }
+.display-flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
 
 .display-flex-column-align-center{
     display: flex;
@@ -62,6 +66,17 @@ input {
 .margin-left245 {
     margin-left: 245px;
 }
+.margin-left230 {
+    margin-left: 230px;
+}
+
+.margin-left65 {
+    margin-left: 65px;
+}
+
+.margin-left36 {
+    margin-left: 36px;
+}
 .margin-left8 {
     margin-left: 8px;
 }
@@ -70,6 +85,9 @@ input {
 }
 .margin-right8 {
     margin-right: 8px;
+}
+.margin-right12 {
+    margin-right: 12px;
 }
 
 .margin-right40{
@@ -88,7 +106,9 @@ input {
 .margin-top8 {
     margin-top: 8px;
 }
-
+.margin-top9 {
+    margin-top: 9px;
+}
 .margin-bottom4 {
     margin-bottom: 4px;
 }
@@ -140,6 +160,10 @@ input {
 /* WIDTH SIZE CSS */
 .width-468 {
     width: 468px;
+}
+
+.width-45 {
+    width: 45px;
 }
 
 .width-24 {

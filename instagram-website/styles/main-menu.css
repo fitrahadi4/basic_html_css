@@ -2,6 +2,15 @@
     width: 66px;
     border-radius: 33px;
 }
+.width-60-rounded {
+    width: 60px;
+    border-radius: 30px;
+}
+
+.width-45-rounded {
+    width: 45px;
+    border-radius: 30px;
+}
 
 .img-circle-post {
     width: 34px;
@@ -27,4 +36,14 @@
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-color: rgb(219, 219, 219);
+}
+
+.main-container {
+    /* background-color: green; */
+    
+}
+
+.center {
+    width: 1000px;
+    background-color: green;
 }
